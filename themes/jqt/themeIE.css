@@ -1,0 +1,430 @@
+body {
+    background: #8e8e8e;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #fff;
+}
+body > * {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#5e5e65));
+    	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c4d4e), to(#404142));
+   		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c4d4e), to(#6e6e6e));
+   		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7c7d8e), to(#8e8e8e));
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7c7d8e", endColorstr="#8e8e8e");
+   		
+}
+h1, h2 {
+    font: bold 16px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #000;
+     	color: #fff;
+     	text-align: center;
+    margin: 10px 10px 5px;
+
+}
+h3 {
+    font: bold 16px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #fff;
+    margin: 10px 10px 5px;
+}
+p {
+	margin-left: 6px;
+}
+/* @group Toolbar */
+.toolbar {
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    height: 45px;
+    background: url(img/toolbar.png) #000000 repeat-x;
+    position: relative;
+}
+.black-translucent .toolbar {
+	margin-top: 20px;
+}
+.toolbar > h1 {
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 10px;
+    line-height: 1em;
+    margin: 1px 0 0 -75px;
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,1) 0 -1px 1px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+body.landscape .toolbar > h1 {
+    margin-left: -125px;
+    width: 250px;
+}
+.button {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    right: 10px;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    height: 33px;
+    line-height: 32px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: #dddddd;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    background: none;
+    /* background-image: url(http://placekitten.com/100/100/);  */
+ background-image: url("img/buttonN.png");
+
+}
+
+.buttonnj {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    right: 10px;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    height: 33px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ddd;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    background: none;
+    background-image: url("img/newgame.png");
+}
+
+.blueButton {
+    -webkit-border-image: url(img/blueButton.png) 0 5 0 5;
+    border-width: 0 5px;
+}
+.back {
+font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    left: 6px;
+    right: auto;
+    padding: 0;
+    max-width: 55px;
+    border-width: 0 8px 0 14px;
+  	background: none;
+    background-image: url("img/back_button.png");
+}
+.back.active {
+    -webkit-border-image: url(img/back_button_clicked.png) 0 8 0 14;
+    color: #aaa;
+}
+.leftButton, .cancel {
+    left: 6px;
+    right: auto;
+}
+.add {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.whiteButton,
+.grayButton {
+    display: block;
+    border-width: 0 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: inherit;
+    color: inherit;
+}
+.whiteButton {
+    -webkit-border-image: url(img/whiteButton.png) 0 12 0 12;
+    text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+.grayButton {
+    -webkit-border-image: url(img/grayButton.png) 0 12 0 12;
+    color: #FFFFFF;
+}
+
+
+#bc {
+    top: 228px;
+    left: 166px;
+    width: 57px;
+    background-image: url("img/btnclear.png");     
+}
+#b1 {
+    top: 342px;
+    left: 166px;
+    width: 42px;    
+}
+#b2 {
+    top: 342px;
+    left: 222px;
+    width: 42px;    
+}
+#b3 {
+    top: 342px;
+    left: 278px;
+    width: 42px;    
+}
+#b4 {
+    top: 304px;
+    left: 166px;
+    width: 42px;     
+}
+#b5 {
+    top: 304px;
+    left: 222px;
+    width: 42px;     
+}
+#b6 {
+    top: 304px;
+    left: 278px;
+    width: 42px;  
+}      
+#b7 {
+    top: 266px;
+    left: 166px;
+    width: 42px;      
+}
+#b8 {
+    top: 266px;
+    left: 222px;
+    width: 42px; 
+}
+#b9 {
+    top: 266px;
+    left: 278px;
+    width: 42px;    
+}
+#b0 {
+    top: 380px;
+    left: 166px;
+    width: 42px;     
+}
+#be {
+    top: 380px;
+    left: 240px;
+    width: 57px;
+    background-image: url("img/btnenter.png");     
+}
+
+#ng {
+    top: 340px;
+    left: 14px;
+    width: 120px;  
+}
+
+#d3 {
+    top: 120px;
+    left: 10px;
+    width: 300px;       
+}
+#d4 {
+    top: 170px;
+    left: 10px;
+    width: 300px;       
+}
+#d5 {
+    top: 220px;
+    left: 10px;
+    width: 300px;       
+}
+.buttonesp {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    background: none;
+    max-width: 50px;
+
+}
+#inst{
+	background: none;
+	height: 33px;
+    background-image: url("img/instr.png");
+	position: absolute;
+    top: 380px;
+    left: 20px;
+    width: 50px;
+}
+#lev {
+	background: none;
+	height: 33px;
+    background-image: url("img/level.png");
+	position: absolute;
+    top: 380px;
+    left: 80px;
+    width: 50px;
+}
+#back3 {
+    color: #fff;
+	background: none;
+	width: 56px;
+	height: 36px;
+    background-image: url("img/backbutton.png");
+	position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#dig3 {
+    color: #fff;
+	background: none;
+	width: 278px;
+	height: 46px;
+    background-image: url("img/btndig.png");
+	position: absolute;
+    top: 110px;
+    left: 50px;
+}
+#dig4 {
+    color: #fff;
+	background: none;
+	width: 278px;
+	height: 46px;
+    background-image: url("img/btndig.png");
+	position: absolute;
+    top: 170px;
+    left: 50px;
+}
+#dig5 {
+    color: #fff;
+	background: none;
+	width: 278px;
+	height: 46px;
+    background-image: url("img/btndig.png");
+	position: absolute;
+    top: 230px;
+    left: 50px;
+}
+
+.space {
+	line-height: 28px;
+}
+
+.resizq {
+/* line-height: 0.6em;	 line-height: 28px;  */
+	 
+	font: bold 20px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #fff;
+    margin: 10px 10px 5px;
+    margin: 10px 0px 5px;
+}
+.resder {
+ 	position: absolute;
+    /* left: 50%;  */
+    left: 140px;
+    top: 0px;
+    
+/* line-height: 0.6em;	 line-height: 28px; */
+    
+	font: bold 20px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #fff;
+    margin: 10px 5px 5px;
+}
+
+.idr {	 
+	font: normal 14px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #ddd;
+    margin: 10px 5px 5px;
+}
+
+.pyf {
+	 
+	font: bold 20px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #eee;
+    margin: 10px 5px 5px;
+}
+
+.mensajes {
+	font: bold 18px Helvetica;  
+    color: rgb(255, 204, 102);
+    margin: 10px 10px 5px;
+    text-align: left;
+}
+
+#m1 {
+position: absolute;
+    /* left: 50%;  */
+    top: 183px;
+    left: 170px;
+}
+#m2 {
+position: absolute;
+    /* left: 50%;  */
+    top: 203px;
+    left: 174px;
+}
+#m3 {
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;    
+	position: absolute;
+    font: normal 16px Helvetica;  
+    color: #ddd;
+    top: 314px;
+    left: 8px;
+}
+
+.entrada {
+position: absolute;
+    /* left: 50%;  */
+    top: 220px;
+    left: 216px;
+    width: 92px;  
+    height: 26px;    
+    margin: 10px 15px 5px;
+   	background-image: url("img/boxa.png"); 
+   	text-align: center;
+   	color: #000;
+   	color: rgb(255, 204, 102);
+	text-decoration: none; 
+	font-family: inherit;
+    font-size: 22px;
+    font-weight: bold;
+}
+#ent {
+
+{
+/*
+line-height: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+*/

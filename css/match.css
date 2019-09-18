@@ -1,0 +1,170 @@
+body {
+    
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #fff;
+	/* background: url(img/holz-1024x768.jpg) fixed center center; */
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+body > * {
+/*
+  
+*/		
+}
+
+h1, h2 {
+    font: bold 16px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #000;
+    color: #eee;
+    text-align: center;
+    margin: 10px 10px 5px;
+}
+    
+p {
+	margin-left: 6px;
+}
+
+.button, .back {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    /* right: 10px;  */
+    left: 10px;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    color: #bbb;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    background: none;
+    -webkit-border-image: url(img/button.png) 0 5 0 5;
+    -moz-border-image: url(img/button.png) 0 5 0 5;
+    -o-border-image: url(img/button.png) 0 5 0 5;
+}
+
+
+.back {
+    left: 6px;
+    right: auto;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddd;
+    max-width: 55px;
+    width: auto;
+    width: 34px;
+    height: 32px;
+    line-height: 30px;
+    border-width: 0 8px 0 14px;
+    -webkit-border-image: url(img/back_button.png) 0 8 0 14;
+    -moz-border-image: url(img/back_button.png) 0 8 0 14;
+    -o-border-image: url(img/back_button.png) 0 8 0 14;
+}
+
+
+
+/*  *********  HOME ********* */
+#splash, #splash2 {				
+    position: absolute;
+    top: 45%;
+    /*  AAVVPP  left: 45%;  */
+}
+
+/*  *********  JUEGO ********* */
+
+
+.signos {
+    /* position: absolute;
+    margin: 0; */
+	width: 300px;		/*  ANCHO DE CADA IMAGEN *********************************** */
+
+     
+}
+
+
+#sg1 {				/* boton siga1 */
+    top: 62%;
+    left: 48%;
+
+}
+#sg2 {				/* boton siga2 */
+    top: 74%;
+    left: 56.7%;
+}
+#sg3 {				/* boton siga3 */
+    top: 96%;
+    left: 56.7%;
+}
+#sg4 {				/* boton siga4 */
+    top: 107%;
+    left: 48%;
+}
+#sg5 {				/* boton siga5 */
+    top: 96%;
+    left: 39%;
+}
+#sg6 {				/* boton siga6 */
+    top: 74%;
+    left: 39%;
+}
+
+.tmp {
+margin-left: 720px;
+margin-top: 420px;
+}
+.fantasma {
+position: absolute;
+	top: 220px;
+	left: 220px;
+}
+#nj, #fj {
+/*    
+    width: 75px;
+    height: 57px;
+    -moz-border-image: url(img/arrowlpng.png) 0 8 0 14;
+    -webkit-border-image: url(img/arrowlpng.png) 0 8 0 14;
+
+    -o-border-image: url(img/arrowlpng.png) 0 8 0 14;
+*/
+}
+
+#arrl, #fj {	
+    height: 58px;
+    width: 75px;
+}
+
+#gr {
+position: absolute;
+    top: 45px;
+    left: 15vw;
+}
+#gg {
+position: absolute;
+    top: 45px;
+    left: 30vw;
+}
+#gv {
+position: absolute;
+    top: 45px;
+    left: 45vw;
+
+}
+#gj {
+position: absolute;
+    top: 45px;
+    left: 60vw;
+
+}

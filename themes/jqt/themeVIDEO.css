@@ -1,0 +1,392 @@
+body {
+    background: #8e8e8e;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #fff;
+}
+body > * {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#5e5e65));
+    	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c4d4e), to(#404142));
+   		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c4d4e), to(#6e6e6e));
+   		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7c7d8e), to(#8e8e8e));
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="7c7d8e", endColorstr="8e8e8e");
+   		
+}
+
+h1, h2 {
+    font: bold 16px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 10px 10px 5px;
+}
+/* h1 {
+    position: absolute;
+    overflow: hidden;
+    left: 100px;
+    top: 6px;
+}
+*/    
+p {
+	margin-left: 6px;
+}
+/* @group Toolbar */
+.toolbar {
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    height: 45px;
+    background: url(img/toolbar.png) #000000 repeat-x;
+    position: relative;
+}
+.black-translucent .toolbar {
+	margin-top: 20px;
+}
+.toolbar > h1 {
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 10px;
+    line-height: 1em;
+    margin: 1px 0 0 -75px;
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,1) 0 -1px 1px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+body.landscape .toolbar > h1 {
+    margin-left: -125px;
+    width: 250px;
+}
+.button, .back, .cancel, .add, .demo {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    right: 10px;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    height: 32px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddd;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    						text-align: center;
+    white-space: nowrap;
+    background: none;
+    -webkit-border-image: url(img/button.png) 0 5 0 5;
+    -moz-border-image: url(img/button.png) 0 5 0 5;
+    -o-border-image: url(img/button.png) 0 5 0 5;
+}
+
+.blueButton {
+    -webkit-border-image: url(img/blueButton.png) 0 5 0 5;
+    border-width: 0 5px;
+}
+.back {
+    left: 6px;
+    right: auto;
+    padding: 0;
+    max-width: 55px;
+    border-width: 0 8px 0 14px;
+    -webkit-border-image: url(img/back_button.png) 0 8 0 14;
+    -moz-border-image: url(img/back_button.png) 0 8 0 14;
+    -o-border-image: url(img/back_button.png) 0 8 0 14;
+}
+.demo {
+position: absolute;
+    padding: 0;
+    max-width: 55px;
+    border-width: 0 12px 0 4px;
+    -webkit-border-image: url(img/buttondemo1.png) 0 12 0 4;
+    -moz-border-image: url(img/buttondemo1.png) 0 12 0 4;
+    -o-border-image: url(img/buttondemo1.png) 0 12 0 4;
+}
+
+.back.active {
+    -webkit-border-image: url(img/back_button_clicked.png) 0 8 0 14;
+    color: #aaa;
+}
+.leftButton, .cancel {
+    left: 6px;
+    right: auto;
+}
+.add {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.whiteButton,
+.grayButton {
+    display: block;
+    border-width: 0 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: inherit;
+    color: inherit;
+}
+.whiteButton {
+    -webkit-border-image: url(img/whiteButton.png) 0 12 0 12;
+    text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+.grayButton {
+    -webkit-border-image: url(img/grayButton.png) 0 12 0 12;
+    color: #FFFFFF;
+}
+
+.bgentrada {
+    position: absolute;
+    top: 226px;
+    left: 165px;
+    width: 90px;  
+    overflow: hidden;
+
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddd;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    						text-align: center;
+    white-space: nowrap;
+    background: none;
+    -webkit-border-image: url(img/button.png) 0 5 0 5;
+    									-moz-border-image: url(img/button.png) 0 5 0 5;
+    									-o-border-image: url(img/button.png) 0 5 0 5;
+}
+#bc {
+    top: 188px;
+    left: 160px;
+    width: 35px;     
+}
+#b1 {
+    top: 302px;
+    left: 156px;
+    width: 30px;    
+}
+#b2 {
+    top: 302px;
+    left: 210px;
+    width: 30px;    
+}
+#b3 {
+    top: 302px;
+    left: 264px;
+    width: 30px;    
+}
+#b4 {
+    top: 264px;
+    left: 156px;
+    width: 30px;     
+}
+#b5 {
+    top: 264px;
+    left: 210px;
+    width: 30px;     
+}
+#b6 {
+    top: 264px;
+    left: 264px;
+    width: 30px;  
+}      
+#b7 {
+    top: 226px;
+    left: 156px;
+    width: 30px;      
+}
+#b8 {
+    top: 226px;
+    left: 210px;
+    width: 30px; 
+}
+#b9 {
+    top: 226px;
+    left: 264px;
+    width: 30px;    
+}
+#b0 {
+    top: 340px;
+    left: 156px;
+    width: 30px;     
+}
+#be {
+    top: 340px;
+    left: 210px;
+    width: 80px;     
+}
+
+#ng {
+    top: 300px;
+    left: 14px;
+    width: 100px;  
+ 	-webkit-border-image: url(img/newgame1.png) 0 5 0 5;  
+ 											-moz-border-image: url(img/newgame1.png) 0 5 0 5;   
+ 											-o-border-image: url(img/newgame1.png) 0 5 0 5; 
+}
+
+#d3 {
+    top: 120px;
+    left: 10px;
+    width: 300px;       
+}
+#d4 {
+    top: 170px;
+    left: 10px;
+    width: 300px;       
+}
+#d5 {
+    top: 220px;
+    left: 10px;
+    width: 300px;       
+}
+
+.buttonesp {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    						text-align: center;
+    white-space: nowrap;
+    background: none;
+    max-width: 50px;
+    -webkit-border-image: url(img/btnesp.png) 0 5 0 5;
+    											-moz-border-image: url(img/btnesp.png) 0 5 0 5;
+    											-o-border-image: url(img/btnesp.png) 0 5 0 5;
+}
+#inst{
+	position: absolute;
+    top: 340px;
+    left: 4px;
+    width: 50px;
+}
+#lev {
+	position: absolute;
+    top: 340px;
+    left: 76px;
+    width: 50px;
+}
+
+.space {
+	line-height: 28px;
+}
+
+.resizq {
+/* line-height: 0.6em;	 line-height: 28px;  */
+	 
+	font: bold 20px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #fff;
+    margin: 10px 10px 5px;
+    margin: 10px 0px 5px;
+}
+.resder {
+ 	position: absolute;
+    /* left: 50%;  */
+    left: 140px;
+    top: 0px;
+    
+/* line-height: 0.6em;	 line-height: 28px; */
+    
+	font: bold 20px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #fff;
+    margin: 10px 5px 5px;
+}
+
+.idr {	 
+	font: normal 14px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #ddd;
+    margin: 10px 5px 5px;
+}
+
+.pyf {
+	 
+	font: bold 20px Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: #eee;
+    margin: 10px 5px 5px;
+}
+
+.entrada {
+position: absolute;
+    /* left: 50%;  */
+    top: 180px;
+    left: 210px;
+    width: 90px;  
+	font: bold 24px Helvetica;
+    
+    margin: 10px 10px 5px;
+    text-align: center;
+   													color:#333333;
+   													background-color:#333333;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1e1f21), to(#272729));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="1e1f21", endColorstr="272729");
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
+    											 -moz-border-radius: 8px;
+   												 -moz-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
+   												 -o-border-radius: 8px;
+   												 -o-box-shadow: rgba(0,0,0,.3) 1px 1px 3px;
+    
+}
+.mensajes {
+	font: bold 18px Helvetica;  
+    color: rgba(255, 204, 102, 255);
+    margin: 10px 10px 5px;
+    text-align: left;
+
+}
+
+#m1 {
+position: absolute;
+    /* left: 50%;  */
+    top: 160px;
+    left: 160px;
+}
+#m2 {
+position: absolute;
+    /* left: 50%;  */
+    top: 203px;
+    left: 164px;
+}
+#m3 {
+    text-decoration: none;   
+position: absolute;
+    font: normal 16px Helvetica;  
+    color: rgba(255, 204, 102, 255);
+    color: #ddd;
+    top: 274px;
+    left: 4px;
+}
