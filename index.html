@@ -4,6 +4,24 @@
 	<title>Match Game ...</title>     
 	<link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="css/match.css">
+  
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {padding: 0; margin: 0;} </style>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="gray"/>
+  <!-- Fullscreen para ios --> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+                                                                  
+<link rel="icon" href="favicon.ico" type="image/x-icon" />  
+<link rel="apple-touch-icon" href="images/hello-icon-152.png">   
+<meta name="theme-color" content="gray"/>  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="Hello World"> 
+<meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
+<meta name="msapplication-TileColor" content="#FFFFFF">
 
 	<script src="jqtouch/jquery-1.7.1.min.js"></script>
 	<script src="jqtouch/jquery-ui-1.10.4.js"></script>
@@ -20,6 +38,7 @@
 
 </head>
 <body>
+  
 	<div id="home">
 		<div id="splash">
 			<div id="gr" onclick='setgrupo(1, "grupoR.png" )'><a><img width="120px" height="120px" src="images/grupoR.png" /></a></div>
@@ -62,6 +81,8 @@
 			<audio hidden="hidden" src="sounds/ganador.mp3"  id="ganador" />
 		</div>  
 	</div> <!-- finjuego -->
-	
+
+<script src="main.js"></script>
+
 	</body>
 	</html>
