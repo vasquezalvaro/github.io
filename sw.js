@@ -18,7 +18,7 @@ var filesToCache = [
   '/sounds/soundR10.mp3',
   '/sounds/soundR11.mp3',
   '/sounds/soundR12.mp3',
-  '/img/bg.jpg',
+  '/css/img/bg.jpg',
   '/images/arrowleft.png',
   '/images/imgR0.png',
   '/images/imgR1.png',
