@@ -46,14 +46,14 @@ function setgrupo(g, img) {
 		$("#ii2").css("top", "12vh");
     for (var i = 1; i < 5; i++) {
 		$("#a" + i).css("position", "absolute");
-		$("#a" + i).css("left", i*18 + "vw");
+		$("#a" + i).css("left", i*28 + "vw");
 		$("#a" + i).css("top", "45vh");
     }
 //
 //AAVVPP
-glb_audio=1;
-PlaySound("beep1");
-return;
+//glb_audio=1;
+//PlaySound("beep1");
+//return;
 	
 	jQT.goTo("#audio", "flip"); 		
 }	// end function setgrupo
@@ -121,13 +121,14 @@ PlaySound("beep1");
 function creartablero(grp, cat) { 
 //  AAVVPP  const arrgrupo = ["&", "R", "G", "H", "J", "V", "Z", "Y"];
 const arrgrupo = ["&", "R", "R", "R", "R", "V", "Z", "Y"];
+/*
 var numfilas = [];				//  10 numero limite de grupos
 var numcols = [];
 	// Ej: La R (arrgrupo[1]) tiene 4 categorias y 
 	// su cat 1 tiene 3 filas (numfilas[1][1])  y 3 columnas(numcols[1][1])
 	// su cat 3 tiene 4 filas (numfilas[1][3])  y 5 columnas(numcols[1][3])
-numfilas[1] = [0, 3, 3, 4, 5];  // # de Filas por cada grupo y categoria ( 2 dimensiones)
-numcols[1] =  [0, 4, 4, 5, 6];	// # de Columnas por cada grupo y categoria ( 2 dimensiones)
+numfilas[1] = [0, 2, 3, 4, 5];  // # de Filas por cada grupo y categoria ( 2 dimensiones)
+numcols[1] =  [0, 3, 4, 5, 6];	// # de Columnas por cada grupo y categoria ( 2 dimensiones)
 numfilas[2] = [0, 3, 3, 4, 5]; 
 numcols[2] =  [0, 4, 4, 5, 6];
 numfilas[3] = [0, 3, 3, 4, 5]; 
@@ -144,11 +145,11 @@ numcols[6] =  [0, 3, 4, 5, 6];
 	// su cat 3 tiene 4 filas (numfilas[2][3])  y 5 columnas(numcols[2][3])
 numfilas[7] =  [0, 2, 3, 4, 5];
 numcols[7] =  [0, 3, 4, 5, 6];	
+*/
+var numfyc = [ [0, 0], [2, 3], [3, 4], [4, 5], [5, 6] ];
 
-//var numfyc[1] = [ [0, 0], [3, 4], [3, 4], [4, 5], [5, 6] ];
-
-nf=numfilas[grp][cat];
-nc=numcols[grp][cat];
+nf=numfyc[cat][0];
+nc=numfyc[cat][1];
 var ntarj;
 ntarj = nf*nc;
 
@@ -439,5 +440,6 @@ function reactivartodo(ntarj) {
 function nada() {
    
 }
+
 
 
