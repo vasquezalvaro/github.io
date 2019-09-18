@@ -5,11 +5,16 @@ var filesToCache = [
   '/main.js',
   '/js/match-copia2.js',
   '/sounds/beep1.mp3',
+  '/sounds/ganador.mp3',
+  
   '/img/bg.jpg',
+  '/images/grupoR0.png',
   '/images/grupoR.png',
   '/images/grupoG.png',
   '/images/grupoV.png',
   '/images/grupoJ.png',
+  '/images/alegre2.gif',
+
   '/jqtouch/jqtouch.css',
   '/jqtouch/jqtouch.js',
   '/jqtouch/jquery-1.7.1.min.js',
