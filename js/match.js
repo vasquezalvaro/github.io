@@ -140,7 +140,7 @@ PlaySound("beep1");
 
 function creartablero(grp, cat) { 
 //  AAVVPP  const arrgrupo = ["&", "R", "G", "H", "J", "V", "Z", "Y"];
-const arrgrupo = ["&", "R", "R", "R", "R", "V", "Z", "Y"];
+const arrgrupo = ["&", "R", "R", "R", "R", "R", "Z", "Y"];
 
 var numfyc = [ [0, 0], [2, 3], [3, 4], [4, 5], [5, 6] ];
 
