@@ -64,7 +64,7 @@ function setgrupo(g, img) {
 		$("#ii2").css("position", "absolute");
 		$("#ii2").css("left", "40vw");
 		$("#ii2").css("top", "12vh");
-    for (var i = 1; i < 5; i++) {
+    for (var i = 1; i < 6; i++) {
 		$("#a" + i).css("position", "absolute");
 		$("#a" + i).css("left", i*28 + "vw");
 		$("#a" + i).css("top", "45vh");
