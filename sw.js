@@ -37,6 +37,7 @@ var filesToCache = [
   '/images/grupoG.png',
   '/images/grupoV.png',
   '/images/grupoJ.png',
+  '/images/grupoH.png',
   '/images/alegre2.gif',
   '/images/audio1.png',
   '/images/audio2.png',
