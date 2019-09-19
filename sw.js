@@ -3,7 +3,7 @@ var filesToCache = [
   '/',
   '/index.html',
   '/js/main.js',
-  '/js/match-copia2.js',
+  '/js/match.js',
   '/sounds/beep1.mp3',
   '/sounds/ganador.mp3',
   '/sounds/soundR1.mp3',
