@@ -39,7 +39,7 @@ if (screenW < screenH) {  		// tablet
 var sep=30;
 var numi=5;
 var wi=150;
-px=parseInt((1/2)*(screenW - (numi*120 + (numi - 1)*sep)));
+px=parseInt((1/2)*(screenW - (numi*wi + (numi - 1)*sep)));
     for (var i = 1; i < 6; i++) {
 	$("#g" + i).css("position", "absolute");
 	$("#g" + i).css("left", (i-1)*(wi + sep) + px + "px");
