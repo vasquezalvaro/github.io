@@ -29,7 +29,27 @@ var flgtout2;
 
 $(document).ready(function(){ 
 //  if (isvalidbrowser())       .... para controlar el browser .....
+var screenW=window.screen.availWidth;
+var screenH=window.screen.availHeight;
 
+if (screenW < screenH) {  		// tablet
+	screenW=screen.height;
+	screenH=screen.width;
+}
+var sep=30;
+var numi=5;
+var wi=150;
+px=parseInt((1/2)*(screenW - (numi*120 + (numi - 1)*sep)));
+    for (var i = 1; i < 6; i++) {
+	$("#g" + i).css("position", "absolute");
+	$("#g" + i).css("left", (i-1)*(wi + sep) + px + "px");
+	
+	if ( i % 2 == 0) {
+	    $("#g" + i).css("top", "130px");
+        }else{
+	    $("#g" + i).css("top", "80px");
+        }
+    }
 });
 // *******************************************************************************
 function isvalidbrowser() {
