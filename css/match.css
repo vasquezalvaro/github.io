@@ -61,26 +61,3 @@ p {
     height: 58px;
     width: 75px;
 }
-
-#gr {
-position: absolute;
-    top: 45px;
-    left: 15vw;
-}
-#gg {
-position: absolute;
-    top: 45px;
-    left: 30vw;
-}
-#gv {
-position: absolute;
-    top: 45px;
-    left: 45vw;
-
-}
-#gj {
-position: absolute;
-    top: 45px;
-    left: 60vw;
-
-}
