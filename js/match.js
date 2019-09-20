@@ -33,8 +33,8 @@ var screenW=window.screen.availWidth;
 var screenH=window.screen.availHeight;
 
 if (screenW < screenH) {  		// tablet
-	screenW=screen.height;
-	screenH=screen.width;
+	screenW=screen.availHeight;
+	screenH=screen.availWidth;
 }
 var sep=30;
 var numi=5;
@@ -166,8 +166,8 @@ var arr_sg_html  = [];
 var arr_bk_html  = []; 
 
 if (screenW < screenH) {  		// tablet
-	screenW=screen.height;
-	screenH=screen.width;
+	screenW=screen.availHeight;
+	screenH=screen.availWidth;
 }
 
 // ************** RECALCULANDO ancho de imagen ************************
