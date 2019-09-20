@@ -1,3 +1,7 @@
+var jQT = $.jQTouch({
+            // icon: 'kilo.png',
+            //statusBar: 'black',
+});
 
 var glb_grupo;
 var glb_audio;
@@ -395,7 +399,8 @@ $("#bk" + n).show("puff", {   }, 500);
 }
 		
 function desaparecer(n) {
-flgtout=setTimeout( "reactivartodo()", 500, ntarj);
+var flgtout;
+//flgtout=setTimeout( "reactivartodo()", 500, ntarj);
 	$("#sg" + n).remove();
 	$("#bk" + n).remove();
 
