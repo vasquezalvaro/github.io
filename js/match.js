@@ -45,13 +45,16 @@ var numi=5;
 var wi=12;
 var vw=parseInt((1/2)*(100 - (numi*wi + (numi - 1)*sep)));
 for (var i = 1; i < 6; i++) {
-	$("#g" + i).css("position", "absolute");
-	$("#g" + i).css("left", (i-1)*(wi + sep) + vw + "vw");
+	$("#ig" + i).css("position", "absolute");
+	$("#ig" + i).css("width", 12 + "vw");
+	$("#ig" + i).css("height", 12 + "vw");
+	$("#ig" + i).css("position", "absolute");
+	$("#ig" + i).css("left", (i-1)*(wi + sep) + vw + "vw");
 	
 	if ( i % 2 == 0) {
-	    $("#g" + i).css("top", "130px");
+	    $("#ig" + i).css("top", "130px");
     }else{
-	    $("#g" + i).css("top", "80px");
+	    $("#ig" + i).css("top", "80px");
     }
 }
 
