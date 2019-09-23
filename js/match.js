@@ -40,20 +40,21 @@ if (screenW < screenH) {  		// tablet
 	screenW=screen.availHeight;
 	screenH=screen.availWidth;
 }
-var sep=30;
+var sep=2;
 var numi=5;
-var wi=150;
-px=parseInt((1/2)*(screenW - (numi*wi + (numi - 1)*sep)));
-    for (var i = 1; i < 6; i++) {
+var wi=12;
+vw=parseInt((1/2)*(100 - (numi*wi + (numi - 1)*sep)));
+for (var i = 1; i < 6; i++) {
 	$("#g" + i).css("position", "absolute");
-	$("#g" + i).css("left", (i-1)*(wi + sep) + px + "px");
+	$("#g" + i).css("left", (i-1)*(wi + sep) + vw + "vw");
 	
 	if ( i % 2 == 0) {
 	    $("#g" + i).css("top", "130px");
-        }else{
+    }else{
 	    $("#g" + i).css("top", "80px");
-        }
     }
+}
+
 });
 // *******************************************************************************
 function isvalidbrowser() {
